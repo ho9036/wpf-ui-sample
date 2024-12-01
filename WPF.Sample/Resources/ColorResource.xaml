@@ -61,7 +61,8 @@
     <SolidColorBrush x:Key="PastelBlueHighlight" Color="#BBDEFB" />
     <SolidColorBrush x:Key="PastelBluePressed" Color="#64B5F6" />
 
-    <!--  Black and White  -->
+    <!--  Black and White, Transparent  -->
     <SolidColorBrush x:Key="Black" Color="#000000" />
     <SolidColorBrush x:Key="White" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="Transparent" Color="#00000000" />
 </ResourceDictionary>
