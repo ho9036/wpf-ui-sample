@@ -24,8 +24,10 @@ namespace WPF.Sample
                 })
                 .ConfigureServices((context, services) =>
                 {
+                    services.AddMemoryCache();
                     services.AddSingleton<MainWindow>();
                     services.AddSingleton<MainWindowViewModel>();
+                  
                 })
                 .UseSerilog((context, configuration) =>
                 {
