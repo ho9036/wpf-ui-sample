@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 using System.Windows;
 using WPF.Sample.ViewModels;
 
@@ -21,6 +22,14 @@ namespace WPF.Sample
                 {
                     services.AddSingleton<MainWindow>();
                     services.AddSingleton<MainWindowViewModel>();
+                })
+                .ConfigureLogging(logging =>
+                {
+                    var logger = new LoggerConfiguration()
+                        .MinimumLevel.Debug()
+                        .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+                        .CreateLogger();
+                    logging.AddSerilog(logger: logger);
                 })
                 .Build();
         }
