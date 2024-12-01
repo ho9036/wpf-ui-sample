@@ -19,4 +19,7 @@
     <FontFamily x:Key="NotoSansKRExtraLight">pack://application:,,,/Assets/Fonts/NotoSansKR/#NotoSansKR-ExtraLight</FontFamily>
     <FontFamily x:Key="NotoSansKRExtraBold">pack://application:,,,/Assets/Fonts/NotoSansKR/#NotoSansKR-ExtraBold</FontFamily>
     <FontFamily x:Key="NotoSansKRSemiBold">pack://application:,,,/Assets/Fonts/NotoSansKR/#NotoSansKR-SemiBold</FontFamily>
+
+    <!--  Segoe Fluent Icons FontFamily  -->
+    <FontFamily x:Key="SegoeFluentIcons">Segoe Fluent Icons</FontFamily>
 </ResourceDictionary>
