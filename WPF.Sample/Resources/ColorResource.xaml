@@ -1,0 +1,67 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  Primary Color Set  -->
+    <SolidColorBrush x:Key="PrimaryForeground" Color="#D1CECD" />
+    <SolidColorBrush x:Key="PrimaryInactiveForeground" Color="#A39F9F" />
+    <SolidColorBrush x:Key="PrimaryHighlightForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="PrimaryPressedForeground" Color="#B0ACAB" />
+
+    <SolidColorBrush x:Key="PrimaryBackground" Color="#7A7574" />
+    <SolidColorBrush x:Key="PrimaryInactiveBackground" Color="#5F5B5A" />
+    <SolidColorBrush x:Key="PrimaryHighlightBackground" Color="#9E9998" />
+    <SolidColorBrush x:Key="PrimaryPressedBackground" Color="#6C6867" />
+
+    <!--  Secondary Color Set  -->
+    <SolidColorBrush x:Key="SecondaryForeground" Color="#B0ACAB" />
+    <SolidColorBrush x:Key="SecondaryInactiveForeground" Color="#8F8A89" />
+    <SolidColorBrush x:Key="SecondaryHighlightForeground" Color="#DAD8D7" />
+    <SolidColorBrush x:Key="SecondaryPressedForeground" Color="#9E9A99" />
+
+    <SolidColorBrush x:Key="SecondaryBackground" Color="#615E5D" />
+    <SolidColorBrush x:Key="SecondaryInactiveBackground" Color="#4E4B4A" />
+    <SolidColorBrush x:Key="SecondaryHighlightBackground" Color="#7F7C7B" />
+    <SolidColorBrush x:Key="SecondaryPressedBackground" Color="#575453" />
+
+    <!--  Tertiary Color Set  -->
+    <SolidColorBrush x:Key="TertiaryForeground" Color="#F0EEED" />
+    <SolidColorBrush x:Key="TertiaryInactiveForeground" Color="#C7C4C3" />
+    <SolidColorBrush x:Key="TertiaryHighlightForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="TertiaryPressedForeground" Color="#D4D1D0" />
+
+    <SolidColorBrush x:Key="TertiaryBackground" Color="#9E9A99" />
+    <SolidColorBrush x:Key="TertiaryInactiveBackground" Color="#827F7E" />
+    <SolidColorBrush x:Key="TertiaryHighlightBackground" Color="#BFBDBC" />
+    <SolidColorBrush x:Key="TertiaryPressedBackground" Color="#8F8C8B" />
+
+    <!--  Pastel Red  -->
+    <SolidColorBrush x:Key="PastelRed" Color="#F28B82" />
+    <SolidColorBrush x:Key="PastelRedForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="PastelRedBackground" Color="#F28B82" />
+    <SolidColorBrush x:Key="PastelRedHighlight" Color="#FFCDD2" />
+    <SolidColorBrush x:Key="PastelRedPressed" Color="#E57373" />
+
+    <!--  Pastel Yellow  -->
+    <SolidColorBrush x:Key="PastelYellow" Color="#FBBC04" />
+    <SolidColorBrush x:Key="PastelYellowForeground" Color="#000000" />
+    <SolidColorBrush x:Key="PastelYellowBackground" Color="#FBBC04" />
+    <SolidColorBrush x:Key="PastelYellowHighlight" Color="#FFE082" />
+    <SolidColorBrush x:Key="PastelYellowPressed" Color="#F9A825" />
+
+    <!--  Pastel Green  -->
+    <SolidColorBrush x:Key="PastelGreen" Color="#81C995" />
+    <SolidColorBrush x:Key="PastelGreenForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="PastelGreenBackground" Color="#81C995" />
+    <SolidColorBrush x:Key="PastelGreenHighlight" Color="#B9F6CA" />
+    <SolidColorBrush x:Key="PastelGreenPressed" Color="#66BB6A" />
+
+    <!--  Pastel Blue  -->
+    <SolidColorBrush x:Key="PastelBlue" Color="#AECBFA" />
+    <SolidColorBrush x:Key="PastelBlueForeground" Color="#000000" />
+    <SolidColorBrush x:Key="PastelBlueBackground" Color="#AECBFA" />
+    <SolidColorBrush x:Key="PastelBlueHighlight" Color="#BBDEFB" />
+    <SolidColorBrush x:Key="PastelBluePressed" Color="#64B5F6" />
+
+    <!--  Black and White  -->
+    <SolidColorBrush x:Key="Black" Color="#000000" />
+    <SolidColorBrush x:Key="White" Color="#FFFFFF" />
+</ResourceDictionary>
