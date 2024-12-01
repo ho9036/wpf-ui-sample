@@ -39,7 +39,7 @@ namespace WPF.Sample
                     services.AddMemoryCache();
                     services.AddSingleton<MainWindow>();
                     services.AddSingleton<MainWindowViewModel>();
-                  
+
                 })
                 .UseSerilog((context, configuration) =>
                 {
