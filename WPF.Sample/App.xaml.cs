@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using System.Windows;
@@ -17,6 +18,10 @@ namespace WPF.Sample
             InitializeComponent();
 
             _host = Host.CreateDefaultBuilder()
+                .ConfigureHostConfiguration(configuration =>
+                {
+                    configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                })
                 .ConfigureServices((context, services) =>
                 {
                     services.AddSingleton<MainWindow>();
