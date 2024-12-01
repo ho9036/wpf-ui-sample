@@ -1,9 +1,11 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using System.Windows;
 using System.Windows.Threading;
+using WPF.Sample.Datacontexts;
 using WPF.Sample.Extensions;
 using WPF.Sample.ViewModels;
 
@@ -24,6 +26,7 @@ namespace WPF.Sample
                 })
                 .ConfigureServices((context, services) =>
                 {
+                    services.AddDbContext<MainContext>(options => options.UseSqlite("Data Source=app.db"));
                     services.AddMemoryCache();
                     services.AddSingleton<MainWindow>();
                     services.AddSingleton<MainWindowViewModel>();
@@ -31,9 +34,15 @@ namespace WPF.Sample
                 })
                 .UseSerilog((context, configuration) =>
                 {
+#if DEBUG
                     configuration
                         .MinimumLevel.Debug()
                         .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day);
+#else
+                    configuration
+                        .MinimumLevel.Information()
+                        .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Infinite);
+#endif
                 })
                 .Build();
         }
