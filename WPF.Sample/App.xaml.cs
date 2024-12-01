@@ -2,13 +2,12 @@
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using System.Windows;
+using System.Windows.Threading;
+using WPF.Sample.Extensions;
 using WPF.Sample.ViewModels;
 
 namespace WPF.Sample
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
         private IHost _host;
@@ -23,13 +22,11 @@ namespace WPF.Sample
                     services.AddSingleton<MainWindow>();
                     services.AddSingleton<MainWindowViewModel>();
                 })
-                .ConfigureLogging(logging =>
+                .UseSerilog((context, configuration) =>
                 {
-                    var logger = new LoggerConfiguration()
+                    configuration
                         .MinimumLevel.Debug()
-                        .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
-                        .CreateLogger();
-                    logging.AddSerilog(logger: logger);
+                        .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day);
                 })
                 .Build();
         }
@@ -49,6 +46,11 @@ namespace WPF.Sample
                 await _host.StopAsync();
             }
             base.OnExit(e);
+        }
+
+        private void Application_DispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
+        {
+            _host.WriteFatalLog(e.Exception, "Unhandled exception occurred");
         }
     }
 }
