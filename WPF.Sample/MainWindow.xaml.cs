@@ -19,8 +19,6 @@ namespace WPF.Sample
         public MainWindow()
         {
             InitializeComponent();
-
-            throw new System.NotImplementedException();
         }
     }
 }

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using System.IO;
 using System.Windows;
 using System.Windows.Threading;
 using WPF.Sample.Datacontexts;
@@ -13,12 +14,10 @@ namespace WPF.Sample
 {
     public partial class App : Application
     {
-        private IHost _host;
+        private readonly IHost _host;
 
         public App()
         {
-            InitializeComponent();
-
             _host = Host.CreateDefaultBuilder()
                 .ConfigureHostConfiguration(configuration =>
                 {
@@ -26,7 +25,17 @@ namespace WPF.Sample
                 })
                 .ConfigureServices((context, services) =>
                 {
-                    services.AddDbContext<MainContext>(options => options.UseSqlite("Data Source=app.db"));
+                    services.AddDbContext<MainContext>(options =>
+                    {
+                        var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+                        var dbDirectory = $@"{appDataPath}\WPF.Sample.Jhyoon";
+                        if (Directory.Exists(dbDirectory) == false)
+                        {
+                            Directory.CreateDirectory(dbDirectory);
+                        }
+
+                        options.UseSqlite($@"Data Source={dbDirectory}\app.db");
+                    });
                     services.AddMemoryCache();
                     services.AddSingleton<MainWindow>();
                     services.AddSingleton<MainWindowViewModel>();
@@ -50,8 +59,15 @@ namespace WPF.Sample
         protected override async void OnStartup(StartupEventArgs e)
         {
             await _host.StartAsync();
-            var mainWindow = _host.Services.GetRequiredService<MainWindow>();
+
+            var services = _host.Services;
+
+            var dbContext = services.GetRequiredService<MainContext>();
+            await dbContext.Database.EnsureCreatedAsync();
+
+            var mainWindow = services.GetRequiredService<MainWindow>();
             mainWindow.Show();
+
             base.OnStartup(e);
         }
 

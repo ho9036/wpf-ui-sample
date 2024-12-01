@@ -2,7 +2,7 @@
 
 namespace WPF.Sample.Datacontexts
 {
-    public class MainContext : DbContext
+    public class MainContext(DbContextOptions<MainContext> options) : DbContext(options)
     {
     }
 }
