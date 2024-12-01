@@ -8,6 +8,7 @@ using System.Windows;
 using System.Windows.Threading;
 using WPF.Sample.Datacontexts;
 using WPF.Sample.Extensions;
+using WPF.Sample.Pages;
 using WPF.Sample.ViewModels;
 
 namespace WPF.Sample
@@ -39,7 +40,8 @@ namespace WPF.Sample
                     services.AddMemoryCache();
                     services.AddSingleton<MainWindow>();
                     services.AddSingleton<MainWindowViewModel>();
-
+                    services.AddTransient<LoginPage>();
+                    services.AddTransient<LoginPageViewModel>();
                 })
                 .UseSerilog((context, configuration) =>
                 {
