@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  NotoSans FontFamily  -->
+    <FontFamily x:Key="NotoSansRegular">pack://application:,,,/Assets/Fonts/NotoSans/#NotoSans</FontFamily>
+    <FontFamily x:Key="NotoSansBold">pack://application:,,,/Assets/Fonts/NotoSans/#NotoSans-Bold</FontFamily>
+    <FontFamily x:Key="NotoSansLight">pack://application:,,,/Assets/Fonts/NotoSans/#NotoSans-Light</FontFamily>
+    <FontFamily x:Key="NotoSansMedium">pack://application:,,,/Assets/Fonts/NotoSans/#NotoSans-Medium</FontFamily>
+    <FontFamily x:Key="NotoSansThin">pack://application:,,,/Assets/Fonts/NotoSans/#NotoSans-Thin</FontFamily>
+    <FontFamily x:Key="NotoSansExtraLight">pack://application:,,,/Assets/Fonts/NotoSans/#NotoSans-ExtraLight</FontFamily>
+    <FontFamily x:Key="NotoSansExtraBold">pack://application:,,,/Assets/Fonts/NotoSans/#NotoSans-ExtraBold</FontFamily>
+    <FontFamily x:Key="NotoSansSemiBold">pack://application:,,,/Assets/Fonts/NotoSans/#NotoSans-SemiBold</FontFamily>
+
+    <!--  NotoSansKR FontFamily  -->
+    <FontFamily x:Key="NotoSansKRRegular">pack://application:,,,/Assets/Fonts/NotoSansKR/#NotoSansKR</FontFamily>
+    <FontFamily x:Key="NotoSansKRBold">pack://application:,,,/Assets/Fonts/NotoSansKR/#NotoSansKR-Bold</FontFamily>
+    <FontFamily x:Key="NotoSansKRLight">pack://application:,,,/Assets/Fonts/NotoSansKR/#NotoSansKR-Light</FontFamily>
+    <FontFamily x:Key="NotoSansKRMedium">pack://application:,,,/Assets/Fonts/NotoSansKR/#NotoSansKR-Medium</FontFamily>
+    <FontFamily x:Key="NotoSansKRThin">pack://application:,,,/Assets/Fonts/NotoSansKR/#NotoSansKR-Thin</FontFamily>
+    <FontFamily x:Key="NotoSansKRExtraLight">pack://application:,,,/Assets/Fonts/NotoSansKR/#NotoSansKR-ExtraLight</FontFamily>
+    <FontFamily x:Key="NotoSansKRExtraBold">pack://application:,,,/Assets/Fonts/NotoSansKR/#NotoSansKR-ExtraBold</FontFamily>
+    <FontFamily x:Key="NotoSansKRSemiBold">pack://application:,,,/Assets/Fonts/NotoSansKR/#NotoSansKR-SemiBold</FontFamily>
+</ResourceDictionary>

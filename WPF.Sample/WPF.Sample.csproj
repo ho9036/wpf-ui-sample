@@ -9,10 +9,88 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Fonts\NotoSansKR\NotoSansKR-Black.ttf" />
+    <None Remove="Assets\Fonts\NotoSansKR\NotoSansKR-Bold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansKR\NotoSansKR-ExtraBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansKR\NotoSansKR-ExtraLight.ttf" />
+    <None Remove="Assets\Fonts\NotoSansKR\NotoSansKR-Light.ttf" />
+    <None Remove="Assets\Fonts\NotoSansKR\NotoSansKR-Medium.ttf" />
+    <None Remove="Assets\Fonts\NotoSansKR\NotoSansKR-Regular.ttf" />
+    <None Remove="Assets\Fonts\NotoSansKR\NotoSansKR-SemiBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansKR\NotoSansKR-Thin.ttf" />
+    <None Remove="Assets\Fonts\NotoSans\NotoSans-Black.ttf" />
+    <None Remove="Assets\Fonts\NotoSans\NotoSans-Bold.ttf" />
+    <None Remove="Assets\Fonts\NotoSans\NotoSans-ExtraBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSans\NotoSans-ExtraLight.ttf" />
+    <None Remove="Assets\Fonts\NotoSans\NotoSans-Light.ttf" />
+    <None Remove="Assets\Fonts\NotoSans\NotoSans-Medium.ttf" />
+    <None Remove="Assets\Fonts\NotoSans\NotoSans-Regular.ttf" />
+    <None Remove="Assets\Fonts\NotoSans\NotoSans-SemiBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSans\NotoSans-Thin.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
     <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Fonts\NotoSansKR\NotoSansKR-Black.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSansKR\NotoSansKR-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSansKR\NotoSansKR-ExtraBold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSansKR\NotoSansKR-ExtraLight.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSansKR\NotoSansKR-Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSansKR\NotoSansKR-Medium.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSansKR\NotoSansKR-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSansKR\NotoSansKR-SemiBold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSansKR\NotoSansKR-Thin.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSans\NotoSans-Black.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSans\NotoSans-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSans\NotoSans-ExtraBold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSans\NotoSans-ExtraLight.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSans\NotoSans-Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSans\NotoSans-Medium.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSans\NotoSans-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSans\NotoSans-SemiBold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Fonts\NotoSans\NotoSans-Thin.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
